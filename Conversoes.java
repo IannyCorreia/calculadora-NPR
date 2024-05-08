@@ -7,7 +7,7 @@ public class Conversoes {
         Stack<Character> pilha = new Stack<>();
     
         for (char operador: infixa.toCharArray()) {
-            if (Character.isLetterOrDigit(operador)) {
+            if (Character.isDigit(operador)) {
                 posfixa.append(operador).append(' ');
             } else if (operador == '(') {
                 pilha.push(operador);
